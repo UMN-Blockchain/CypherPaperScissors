@@ -1,9 +1,7 @@
 from hashlib import sha256
-import random
 
-miner_address = "[Insert Your Address]"
-random.seed(miner_address)
-block_hash = "[Hash of current block]"
+miner_address = "Wyatt"
+block_hash = "d395fa355da2a6caa19e7c64afc58c82a9e16ef7cd11a517107d26371bd9c063"
 to_hash = miner_address + block_hash
 max_run = 10000 # Limits the amount of loops in case of errors
 difficulty = 3

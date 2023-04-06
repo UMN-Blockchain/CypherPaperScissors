@@ -1,1 +1,1 @@
-i
+        self.root = sample_string
