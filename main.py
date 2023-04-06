@@ -1,13 +1,14 @@
-from block import Block, Move, Blockchain
+from blockchain import Blockchain
 
-block = Block()
+CypherPaperScissorsChain = Blockchain()
 
 
-def play_CypherPaperScissors(block: Block):
-    name = input("What is your name? ")
-    play = input("What is your play? ")
-    password = input("Enter a secret password: ")
-    block.add_move(Move(play + password, name))
+def play_CypherPaperScissors(block: Blockchain):
+    CypherPaperScissorsChain.add_block()
+    print(CypherPaperScissorsChain)
     
 while True:
-    play_CypherPaperScissors(block)
+    play_CypherPaperScissors(Blockchain)
+    cont = input("Input Y to continue N to stop")
+    if cont == "N":
+        break

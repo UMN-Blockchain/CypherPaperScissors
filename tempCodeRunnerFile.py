@@ -1,1 +1,1 @@
-        self.root = sample_string
+Not quite
